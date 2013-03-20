@@ -11,10 +11,10 @@ var themeColor              = "#d00355";
 var menuActive              = true;
 var menuHoverActive         = true; /* it will change to false if menuActive == true. If 'menuActive' 
                                         is false and this true than on hover it will show the menu */ 
-var menuTextOutColor        = "#777777"; 
+var menuTextOutColor        = "black";
  
 var customPageStart         = true;
-var customPageStartURL      = "#portfolio.html";
+var customPageStartURL      = "#about_me.html";
 var customPageStartSide     = "none";
 var customPageStartType     = "full_width_gallery";
 
