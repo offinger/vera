@@ -30,7 +30,6 @@
         <script type="text/javascript" src="js/libs/modernizr.custom.min.js"></script> 
         <script type="text/javascript" src="js/libs/jquery.wipetouch.js"></script>   
              
-        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBttxrYoBq8srteD7evmDqnaK6V2Uun42o&amp;sensor=true"></script>
         
         <script type="text/javascript" src="js/libs/jquery.gmap.min.js"></script>
         <script type="text/javascript" src="js/greensock/minified/TweenMax.min.js"></script>    
@@ -63,43 +62,34 @@
 <div class="main-template-loader"></div>
 
 <div id="template-wrapper">
-    <div id="menu-container"><!-- start #menu-container -->        
+        <div id="menu-container"><!-- start #menu-container -->        
         <div class="menu-content-holder"><!-- start .menu-content-holder -->
             <div class="menu-background"></div>
-            <div id="template-logo" class="template-logo" data-href="#portfolio.html"></div> 
-            <div id="template-menu" class="template-menu" data-current-module-type="text_page" data-side="none" data-href="#careers.html"><!-- start #template-menu -->
+            <div id="template-logo" class="template-logo" data-href="#about_me.html"></div> 
+            <div id="template-menu" class="template-menu" data-current-module-type="full_width_gallery" data-side="none" data-href="#about_me.html"><!-- start #template-menu -->            
+				<div class="menu-option-holder" data-module-type="slideshow" data-side="none">
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text">
+						<a href="#home.html" data-path-href="html/home/">HOME</a>
+					</div>
+				</div>
+                 <div class="menu-option-holder" data-module-type="text_page" data-side="height">
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text"><a href="#about_me.html" data-path-href="html/about_me/">ABOUT</a></div>
+                </div>              
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text"><a href="#portfolio.html" data-path-href="html/portfolio/">LOOKS</a></div>
+                </div> 
                 <div class="menu-option-holder">
-                    <div class="menu-option-background"> </div>
-                    <div class="menu-option-text">
-                        <a href="#">HOME</a>
-                        <div class="menu-option-sign">+</div>
-                    </div>                
-                    <div class="sub-menu-holder">
-                        <div class="sub-menu-option-holder" data-module-type="slideshow" data-side="none">
-                            <div class="sub-menu-option-background"></div>
-                            <div class="sub-menu-option-text"><a href="#home_layout_1.html" data-path-href="html/home/">Home Layout 1</a></div>
-                        </div>
-                        <div class="sub-menu-option-holder" data-module-type="home2" data-side="none">
-                            <div class="sub-menu-option-background"></div>
-                            <div class="sub-menu-option-text"><a href="#home_layout_2.html" data-path-href="html/home/">Home Layout 2</a></div>
-                        </div>
-                        <div class="sub-menu-option-holder" data-module-type="home3" data-side="none">
-                            <div class="sub-menu-option-background"> </div>
-                            <div class="sub-menu-option-text"><a href="#home_layout_3.html" data-path-href="html/home/">Home Layout 3</a></div>
-                        </div>
-                        
-                    </div>         
-                </div>
-                <div class="menu-option-holder">
-                    <div class="menu-option-background"> </div>
-                    <div  class="menu-option-text">
-                        <a href="#">ABOUT US</a>
-                        <div class="menu-option-sign">+</div>
-                    </div>
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text">
+                        <a href="#">SERVICES</a>
+                    </div>				
                     <div class="sub-menu-holder">
                         <div class="sub-menu-option-holder" data-module-type="text_page" data-side="height">
                             <div class="sub-menu-option-background"></div>
-                            <div class="sub-menu-option-text"><a href="#about_us.html" data-path-href="html/about_us/">About us</a></div>
+                            <div class="sub-menu-option-text"><a href="#about_me.html" data-path-href="html/about_me/">About me</a></div>
                         </div>
                         <div class="sub-menu-option-holder" data-module-type="text_page" data-side="none">
                             <div class="sub-menu-option-background"></div>
@@ -114,106 +104,38 @@
                             <div class="sub-menu-option-text"><a href="#careers.html" data-path-href="html/about_us/">Careers</a></div>
                         </div>                        
                     </div>
-                </div>
-                <div class="menu-option-holder" data-module-type="news" data-side="height">
-                    <div class="menu-option-background"> </div>
-                    <div  class="menu-option-text"><a href="#news.html" data-path-href="html/news/">NEWS</a></div>
-                </div>  
-                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
-                    <div class="menu-option-background"> </div>
-                    <div  class="menu-option-text"><a href="#portfolio.html" data-path-href="html/portfolio/">PORTFOLIO</a></div>
-                </div> 
-                <div class="menu-option-holder">
-                    <div class="menu-option-background"> </div>
-                    <div  class="menu-option-text"><a href="#">OUR PROJECTS</a><div class="menu-option-sign">+</div></div>
-                    <div class="sub-menu-holder">
-                        <div class="sub-menu-option-holder" data-module-type="page_columns" data-side="custom">
-                            <div class="sub-menu-option-background"> </div>
-                            <div class="sub-menu-option-text"><a href="#4_columns_projects.html" data-path-href="html/our_projects/">4 Columns Projects</a></div>
-                        </div>
-                        <div class="sub-menu-option-holder" data-module-type="page_columns" data-side="custom">
-                            <div class="sub-menu-option-background"> </div>
-                            <div class="sub-menu-option-text"><a href="#3_columns_projects.html" data-path-href="html/our_projects/">3 Columns Projects</a></div>
-                        </div>
-                        <div class="sub-menu-option-holder" data-module-type="page_columns" data-side="custom">
-                            <div class="sub-menu-option-background"> </div>
-                            <div class="sub-menu-option-text"><a href="#2_columns_projects.html" data-path-href="html/our_projects/">2 Columns Projects</a></div>
-                        </div>
-                    </div>
-                </div>               
-                <div class="menu-option-holder" data-module-type="showreel" data-side="none">
-                    <div class="menu-option-background"> </div>
-                    <div  class="menu-option-text"><a href="#showreel.html" data-path-href="html/showreel/">SHOWREEL</a></div>
-                </div>                               
-                <div class="menu-option-holder">
-                    <div class="menu-option-background"> </div>
-                    <div  class="menu-option-text"><a href="#">GALLERIES</a><div class="menu-option-sign">+</div></div>
-                    <div class="sub-menu-holder">
-                        <div class="sub-menu-option-holder" data-module-type="gallery" data-side="none">
-                            <div class="sub-menu-option-background"></div>
-                            <div class="sub-menu-option-text"><a href="#image_gallery.html" data-path-href="html/galleries/">Image Gallery</a></div>
-                        </div>
-                        <div class="sub-menu-option-holder" data-module-type="gallery" data-side="none">
-                            <div class="sub-menu-option-background"> </div>
-                            <div class="sub-menu-option-text"><a href="#mixed_gallery.html" data-path-href="html/galleries/">Mixed Gallery</a></div>
-                        </div>                        
-                    </div>
+                </div>                                      
+                <div class="menu-option-holder" data-module-type="gallery" data-side="none">
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text"><a href="#image_gallery.html" data-path-href="html/galleries/">GALLERY</a><div class="menu-option-sign"></div></div>
                 </div>                
-                <div class="menu-option-holder">
-                    <div class="menu-option-background"> </div>
-                    <div  class="menu-option-text"><a href="#">FEATURES</a><div class="menu-option-sign">+</div></div>
-                    <div class="sub-menu-holder">
-                        <div class="sub-menu-option-holder" data-module-type="full_width" data-side="custom">
-                            <div class="sub-menu-option-background"></div>
-                            <div class="sub-menu-option-text"><a href="#full_width_text_and_image.html" data-path-href="html/features/">Fullwidth Text + Image</a></div>
-                        </div>
-                        <div class="sub-menu-option-holder" data-module-type="full_width" data-side="custom">
-                            <div class="sub-menu-option-background"></div>
-                            <div class="sub-menu-option-text"><a href="#full_width_text_and_video.html" data-path-href="html/features/">Fullwidth Text + Video</a></div>
-                        </div>
-                        <div class="sub-menu-option-holder" data-module-type="fullscreen_video" data-side="none">
-                            <div class="sub-menu-option-background"></div>
-                            <div class="sub-menu-option-text"><a href="#fullscreen_video.html" data-path-href="html/features/">Fullscreen Video</a></div>
-                        </div>
-                        <div class="sub-menu-option-holder" data-module-type="pricing_tables" data-side="none">
-                            <div class="sub-menu-option-background"> </div>
-                            <div class="sub-menu-option-text"><a href="#pricing_tables.html" data-path-href="html/features/">Pricing Table</a></div>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="menu-option-holder" data-module-type="contact" data-side="custom">
-                    <div class="menu-option-background"> </div>
-                    <div  class="menu-option-text"><a href="#contact.html" data-path-href="html/contact/">CONTACT US</a></div>
-                </div>           
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text"><a href="#contact.html" data-path-href="html/contact/">CONTACT</a></div>                   
+                </div>  
+                
+                        <div class="menu-option-holder" data-module-type="news" data-side="height">
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text"><a href="#news.html" data-path-href="html/news/">BLOG</a></div>
+                </div>            
             </div><!-- end #template-menu -->  
             <div id="template-smpartphone-menu">
                 <select>
                     <option value="#">Navigate to...</option>
-                    <option value="#"> HOME +</option>
-                        <option value="#home_layout_1.html">  - Home Layout 1</option>
-                        <option value="#home_layout_2.html">  - Home Layout 2</option>
-                        <option value="#home_layout_3.html">  - Home Layout 3</option>
-                    <option value="#"> ABOUT US +</option>
-                        <option value="#about_us.html">  - About us</option>
-                        <option value="#philosophy.html">  - Philosophy</option>
-                        <option value="#ethics.html">  - Ethics</option>
-                        <option value="#careers.html">  - Careers</option>
-                    <option value="#news.html"> NEWS</option>
-                    <option value="#portfolio.html"> PORTFOLIO</option>
-                    <option value="#"> OUR PROJECTS +</option>
-                        <option value="#4_columns_projects.html">  - 4 Columns Projects</option>
-                        <option value="#3_columns_projects.html">  - 3 Columns Projects</option>
-                        <option value="#2_columns_projects.html">  - 2 Columns Projects</option>
+                    <option value="#home.html"> HOME</option>                     
+                    <option value="#about_me.html"> ABOUT</option>
+                    <option value="#portfolio.html"> LOOKS</option>
+                    <option value="#"> SERVICES</option>
+					    <option value="#about_me.html"> About me</option>
+                        <option value="#philosophy.html"> Philosophy</option>
+                        <option value="#ethics.html"> Ethics</option>
+						<option value="#careers.html"> Careers</option>
+                    <option value="#"> GALLERY</option>
                     <option value="#showreel.html"> SHOWREEL</option>    
-                    <option value="#"> GALLERIES +</option>
-                        <option value="#image_gallery.html">  - Image Gallery</option>
-                        <option value="#mixed_gallery.html">  - Mixed Gallery</option>
-                    <option value="#"> FEATURES +</option>
-                        <option value="#full_width_text_and_image.html">  - Full Width Text + Image</option>
-                        <option value="#full_width_text_and_video.html">  - Full Width Text + Video</option>
-                        <option value="#fullscreen_video.html">  - Fullscreen Video</option>
-                        <option value="#pricing_tables.html">  - Pricing Table</option>  
-                    <option value="#contact.html"> CONTACT</option>
+                    <option value="#image_gallery.html"> GALLERIES</option>
+                    <option value="#contact.html"> CONTACT</option>                        
+                    <option value="#news.html"> BLOG</option>
                 </select>
             </div>
             <footer>    

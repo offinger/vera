@@ -7,14 +7,14 @@
   
  /* start GENERAL CUSTOMIZATION PROPERTIES */
 var templateBaseURL         = "http://localhost:8888/VERA/main_v1_4_2/Synergy_Fullscreen_Portfolio_v1_4_2/";/*"http://themes.mediacreed.com/html/synergy/"*/ 
-var themeColor              = "#d00355";
+var themeColor              = "#e40015";
 var menuActive              = true;
 var menuHoverActive         = true; /* it will change to false if menuActive == true. If 'menuActive' 
                                         is false and this true than on hover it will show the menu */ 
-var menuTextOutColor        = "black";
+var menuTextOutColor        = "#000"; 
  
 var customPageStart         = true;
-var customPageStartURL      = "#about_me.html";
+var customPageStartURL      = "#home.html";
 var customPageStartSide     = "none";
 var customPageStartType     = "full_width_gallery";
 
@@ -4484,7 +4484,7 @@ $(window).load(function(){
     function menuOptionIn( idx1, idx2 ){
         menuOptionsArr[ idx1 ][ 2 ].attr("class", "menu-option-background-selected"); 
         TweenMax.to( menuOptionsArr[ idx1 ][ 2 ], menuAnimDuration, { css:{marginLeft: "0px", width: menuWidth}, ease:menuAnimEase });
-		TweenMax.to( menuOptionsArr[ idx1 ][ 3 ], menuAnimDuration, { css:{color: "#FFF"}, ease:menuAnimEase });
+		TweenMax.to( menuOptionsArr[ idx1 ][ 3 ], menuAnimDuration, { css:{color: "#e40015"}, ease:menuAnimEase });
         if( idx2 != -1 ){
             var subMenu = menuOptionsArr[ idx1 ][ 6 ];
             subMenu[ idx2 ][ 2 ].attr("class", "sub-menu-option-background-selected");   
@@ -4521,7 +4521,7 @@ $(window).load(function(){
        if( event.type == "mouseenter" ){
             menuOptionsArr[ idx ][ 3 ][ 0 ].css("width", menuOptionsArr[ idx ][ 4 ]); 
             TweenMax.to( menuOptionsArr[ idx ][ 2 ], menuAnimDuration, { css:{marginLeft: "0px", width: menuWidth}, ease:menuAnimEase });
-			TweenMax.to( menuOptionsArr[ idx ][ 3 ], menuAnimDuration, { css:{color: "#FFF"}, ease:menuAnimEase });  
+			TweenMax.to( menuOptionsArr[ idx ][ 3 ], menuAnimDuration, { css:{color: "#e40015"}, ease:menuAnimEase });  
             
             if( subMenuHol != "null" ){
                 subMenuHol.css( 'height', '').css( 'width', '');
